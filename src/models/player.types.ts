@@ -1,15 +1,14 @@
 export interface Player {
-    Id: String,
-    Name: String,
-    Position: PositionTypes
-    odds: Number,
-    margin: Number
-    
+  id: string;
+  name: string;
+  position: PositionTypes;
+  odds: number;
+  margin: number;
 }
 
 export enum PositionTypes {
-    Goalkeeper = "Goalkeeper",
-    Defender = "Defender",
-    Midfielder = "Midfielder",
-    Forward = "Forward"
+  Goalkeeper = "Goalkeeper",
+  Defender = "Defender",
+  Midfielder = "Midfielder",
+  Forward = "Forward",
 }

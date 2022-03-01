@@ -2,6 +2,7 @@
 import HeadBar from "../components/HeadBar.vue";
 import TableWrapper from "../components/TableWrapper.vue";
 import TableHead from "../components/TableHead.vue";
+import TableBody from "../components/TableBody.vue";
 </script>
 
 <template>
