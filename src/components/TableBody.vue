@@ -14,8 +14,8 @@ export default defineComponent({
   mounted() {
     axios
       .get("api/players")
-      .then((response: AxiosResponse<Player>) => {
-        this.players = [response.data];
+      .then((response: AxiosResponse<Player[]>) => {
+        this.players = response.data;
         console.log(this.players);
       })
       .catch((err: any) => {
@@ -28,12 +28,41 @@ export default defineComponent({
 
 <template>
   <tbody>
-    <tr v-for="(player, index) in players" :key="index">
-      <td class="text-center">{{ player.id }}</td>
-      <td class="text-center">{{ player.name }}</td>
-      <td class="text-center">{{ player.position }}</td>
-      <td class="text-center">{{ player.odds }}</td>
-      <td class="text-center">{{ player.margin }}</td>
+    <tr
+      class="bg-white border-b dark:bg-gray-800 dark:border-gray-700"
+      v-for="(player, index) in players"
+      :key="index"
+    >
+      <td
+        class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
+      >
+        {{ player.id }}
+      </td>
+      <td
+        class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
+      >
+        {{ player.name }}
+      </td>
+      <td
+        class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
+      >
+        {{ player.position }}
+      </td>
+      <td
+        class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
+      >
+        {{ player.odds }}
+      </td>
+      <td
+        class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
+      >
+        {{ player.margin }}
+      </td>
+      <td
+        class="py-4 px-6 text-sm font-medium text-gray-900 whitespace-nowrap dark:text-white text-center"
+      >
+        <a href="/edit">Edit Margin</a>
+      </td>
     </tr>
   </tbody>
 </template>

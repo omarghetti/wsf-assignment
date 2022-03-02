@@ -6,10 +6,7 @@ import TableBody from "../components/TableBody.vue";
 </script>
 
 <template>
-  <main>
-    <HeadBar />
-  </main>
-  <div class="container mx-auto mt-20">
+  <div class="container mx-auto mt-20 rounded-t-lg">
     <TableWrapper>
       <TableHead />
       <TableBody />

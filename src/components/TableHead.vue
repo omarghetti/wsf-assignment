@@ -4,11 +4,12 @@ export default {};
 
 <template>
   <thead>
-    <th class="bg-teal-300 text-center px-8 py-4">ID</th>
-    <th class="bg-teal-300 text-center px-8 py-4">Name</th>
-    <th class="bg-teal-300 text-center px-8 py-4">Position</th>
-    <th class="bg-teal-300 text-center px-8 py-4">Odds</th>
-    <th class="bg-teal-300 text-center px-8 py-4">Margin</th>
+    <th class="bg-teal-300 text-center px-8 py-4 font-large">ID</th>
+    <th class="bg-teal-300 text-center px-8 py-4 font-large">Name</th>
+    <th class="bg-teal-300 text-center px-8 py-4 font-large">Position</th>
+    <th class="bg-teal-300 text-center px-8 py-4 font-large">Odds</th>
+    <th class="bg-teal-300 text-center px-8 py-4 font-large">Margin</th>
+    <th class="bg-teal-300 text-center px-8 py-4 font-large">Actions</th>
   </thead>
 </template>
 
